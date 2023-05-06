@@ -1,0 +1,9 @@
+starter\pages\CartPage.class
+starter\stepdefinitions\RegisterStep.class
+starter\pages\ProductPage.class
+starter\stepdefinitions\LoginSteps.class
+starter\CucumberTestSuite.class
+starter\stepdefinitions\ProductSteps.class
+starter\pages\LoginPage.class
+starter\stepdefinitions\CartSteps.class
+starter\pages\RegisterPage.class
