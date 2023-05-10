@@ -1,0 +1,11 @@
+starter\stepdefinition\Products\GetAllProductsStep.class
+starter\pages\Products\GetAllProductsPage.class
+starter\pages\Authentication\GetUserInformationPage.class
+starter\stepdefinition\Authentication\PostRegisterSteps.class
+starter\stepdefinition\Authentication\GetUserInformationSteps.class
+starter\pages\Authentication\PostLoginPage.class
+starter\pages\Products\PostNewProductPage.class
+starter\pages\Authentication\PostRegisterPage.class
+starter\CucumberTestSuite.class
+starter\stepdefinition\Products\PostNewProductStep.class
+starter\stepdefinition\Authentication\PostLoginSteps.class

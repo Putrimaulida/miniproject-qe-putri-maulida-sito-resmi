@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: starter.CucumberTestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.169 s <<< FAILURE! - in starter.CucumberTestSuite
+As a user I want to get user information.I want to get user information  Time elapsed: 5.236 s  <<< ERROR!
+io.cucumber.core.exception.CucumberException: 
+Step [I receive response code {int}] is defined with 0 parameters at 'starter.stepdefinition.Authentication.GetUserInformationSteps.iReceiveResponseCode()'.
+However, the gherkin step has 1 arguments:
+ * 200
+Step text: I receive response code 200
+

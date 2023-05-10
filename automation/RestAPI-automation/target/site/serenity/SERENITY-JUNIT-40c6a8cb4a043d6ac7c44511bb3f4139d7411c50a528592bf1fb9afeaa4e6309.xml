@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="As a user I want to get user information" skipped="0" tests="1" time="4.79" timestamp="2023-05-10 05:10:35"><testcase name="I want to get user information"><error message="Step [I receive response code {int}] is defined with 0 parameters at 'starter.stepdefinition.Authentication.GetUserInformationSteps.iReceiveResponseCode()'.&#10;However, the gherkin step has 1 arguments:&#10; * 200&#10;Step text: I receive response code 200" type="io.cucumber.core.exception.CucumberException">Step [I receive response code {int}] is defined with 0 parameters at 'starter.stepdefinition.Authentication.GetUserInformationSteps.iReceiveResponseCode()'.
+However, the gherkin step has 1 arguments:
+ * 200
+Step text: I receive response code 200</error><system-err>Step [I receive response code {int}] is defined with 0 parameters at 'starter.stepdefinition.Authentication.GetUserInformationSteps.iReceiveResponseCode()'.
+However, the gherkin step has 1 arguments:
+ * 200
+Step text: I receive response code 200&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:56)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:84)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:75)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)&#13;
+io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)&#13;
+io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:59)&#13;
+</system-err></testcase></testsuite>
