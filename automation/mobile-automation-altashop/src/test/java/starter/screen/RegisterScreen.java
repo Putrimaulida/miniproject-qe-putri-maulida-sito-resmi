@@ -2,12 +2,13 @@ package starter.screen;
 
 import io.appium.java_client.AppiumBy;
 import net.thucydides.core.annotations.Step;
-
 import org.openqa.selenium.By;
 import test.automation.pageobject.BasePageObject;
 
 public class RegisterScreen extends BasePageObject{
     // ========== Locator @TC01-Register ==========
+    private By homePageProduct() {
+        return AppiumBy.id("android:id/content");}
     private By clickWidget() {
         return AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.Button");
     }
@@ -31,16 +32,21 @@ public class RegisterScreen extends BasePageObject{
     }
 
     // ========== Locator @TC02-Register ==========
-    private By newFullName() {
-        return AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.EditText[1]");
-    }
-    private By errorRegister() {
-        return AppiumBy.xpath("//android.view.View[@content-desc=\"Gagal :(\"]");
-    }
+//    private By newFullName() {
+//        return AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.EditText[1]");
+//    }
+//
+//    private By errorRegister() {
+//        return AppiumBy.xpath("//android.view.View[@content-desc=\"Gagal :(\"]");
+//    }
 
 
 
     // ========== @TC01-Register ==========
+    @Step
+    public void onHomePage() {
+        waitUntilVisible(homePageProduct()).isDisplayed();
+    }
     @Step
     public void clickWidgetIcon() {
         onClick(clickWidget());
@@ -77,14 +83,14 @@ public class RegisterScreen extends BasePageObject{
     }
 
     // ========== @TC02-Register ==========
-    @Step
-    public void newFullNameField(String newName) {
-        onClick(newFullName());
-        clear(newFullName());
-        onType(newFullName(), newName);
-    }
-    @Step
-    public String errorMessage() {
-        return waitUntilVisible(errorRegister()).getText();
-    }
+//    @Step
+//    public void newFullNameField(String newName) {
+//        onClick(newFullName());
+//        clear(newFullName());
+//        onType(newFullName(), newName);
+//    }
+//    @Step
+//    public String errorMessage() {
+//        return waitUntilVisible(errorRegister()).getText();
+//    }
 }

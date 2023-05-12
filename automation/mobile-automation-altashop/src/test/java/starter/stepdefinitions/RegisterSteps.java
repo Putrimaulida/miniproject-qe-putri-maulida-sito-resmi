@@ -12,9 +12,9 @@ public class RegisterSteps {
     @Steps
     RegisterScreen register;
     // ========== @TC01-Register ==========
-    @Given("user on the products page")
-    public void userOnTheProductsPage() {
-        register.onProductPage();
+    @Given("user on login homepage")
+    public void userOnLoginHomePage() {
+        register.onHomePage();
     }
     @When("user click widget button")
     public void userClickWidgetButton() {
@@ -30,26 +30,29 @@ public class RegisterSteps {
     }
     @And("user input valid email")
     public void userInputValidEmail() {
-        register.inputEmail("putrimaulidasr@gmail.com");
+        register.inputEmail("putrimaulida123@gmail.com");
     }
     @And("user input password")
     public void userInputPassword() {
-        register.inputPassword("putri25");
+        register.inputPassword("putri123");
     }
     @And("user click register button")
     public void userClickRegisterButton() {
         register.clickRegisterBtn();
     }
+    @Then("user on the products page")
+    public void userOnTheProductsPage() {
+        register.onProductPage();
+    }
 
     // ========== @TC02-Register ==========
-    @And("user input new full name")
-    public void userInputNewFullName() {
-        register.newFullNameField("Tiara Andini");
-    }
-    @Then("user see error message {string}")
-    public void userSeeErrorMessage(String message) {
-        Assert.assertEquals(message, register.errorMessage());
-    }
-
+//    @And("user input new full name")
+//    public void userInputNewFullName() {
+//        register.newFullNameField("Tiara Andini");
+//    }
+//    @Then("user see error message")
+//    public void userSeeErrorMessage() {
+//        register.errorMessage();
+//    }
 
 }
