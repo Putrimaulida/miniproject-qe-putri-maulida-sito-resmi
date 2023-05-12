@@ -30,11 +30,11 @@ public class RegisterSteps {
     }
     @And("user input valid email")
     public void userInputValidEmail() {
-        register.inputEmail("putrimaulida123@gmail.com");
+        register.inputEmail("maulida12345@gmail.com");
     }
     @And("user input password")
     public void userInputPassword() {
-        register.inputPassword("putri123");
+        register.inputPassword("maulida12345");
     }
     @And("user click register button")
     public void userClickRegisterButton() {

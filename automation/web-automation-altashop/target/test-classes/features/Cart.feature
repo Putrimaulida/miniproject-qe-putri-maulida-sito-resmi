@@ -48,13 +48,5 @@ Feature: Cart
     And user click the cart
     And user click button Bayar
     Then user can see transaction page
-#
-#
-#  @TC_Cart_004
-#  Scenario: As a user, I want to delete product in the cart
-#    Given user success login
-#    And user success add product to the cart
-#    When user click the cart
-#    And user clicks button min until quantity 0
-#    Then user success delete product from the cart
+
 

@@ -7,13 +7,14 @@ import starter.screen.LoginScreen;
 public class LoginSteps {
     @Steps
     LoginScreen login;
+
     @And("user input valid email field")
     public void userInputValidEmailField() {
-        login.inputEmailLogin("putrimaulida123@gmail.com");
+        login.inputEmailLogin("maulida1234@gmail.com");
     }
     @And("user input valid password")
     public void userInputValidPassword() {
-        login.inputPasswordLogin("putri123");
+        login.inputPasswordLogin("maulida1234");
     }
 
     @And("user click login button")

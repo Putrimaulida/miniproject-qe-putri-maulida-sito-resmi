@@ -30,7 +30,7 @@ public class GetUserInformationSteps {
         getUserInformation.iSendHTTPRequest();
     }
 
-    @Then("I receive response code {int}")
+    @Then("I receive response code 200")
     public void iReceiveResponseCode() {
         getUserInformation.iReceiveResponseCode();
     }
