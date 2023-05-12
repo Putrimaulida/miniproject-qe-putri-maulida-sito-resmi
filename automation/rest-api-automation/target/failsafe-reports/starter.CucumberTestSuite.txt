@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: starter.CucumberTestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 40.224 s <<< FAILURE! - in starter.CucumberTestSuite
+As a user I want get all categories.I want to get all categories  Time elapsed: 29.071 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path data[0].ID doesn't match.
+Expected: <14241>
+  Actual: <52485>
+
+
